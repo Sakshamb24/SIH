@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        header {
+          background-color: lightcyan;
+          padding: 20px;
+          border: 4px solid black;
+          text-align: center;
+          font-size: 50px;
+          color: royalblue;
+          font-family: 'brush script mt';
+          
+        }
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-loK-qfz_Gok-jGzj2Lo8MXP1yqJePre7YA&usqp=CAU");
+            background-size: cover;
+        }
+        .styling{
+            background-color: aquamarine;
+            color: white;
+            border: 4px solid black;  
+           
+        
+        }
+        .footerstyling{
+        
+          background-color: yellow;
+          color: black;
+          border: 4px solid black;
+        }
+        
+        
+        
+        li{
+            float: left;
+            border-right: 1px solid black;
+        }
+        
+        ul{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            list-style-type: none;
+        }
+        
+        li a {
+          display: block;
+          color: blue;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none; 
+        }
+        
+        li a:hover {
+          background-color: palevioletred;
+        }
+        
+        li1 a {
+          display: block;
+          color: red;
+          text-align: center;
+          padding: 40px;
+          text-decoration: none; 
+        }
+
+        li1 a:hover {
+  background-color: orange;
+}
+
+        a:link{
+
+color:blue;
+text-decoration: none;
+}
+
+a:visited{
+color:blue;
+text-decoration: none;
+}
+
+#form{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.formstyling{
+    text-align: center;
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+@media screen and (max-width:800px){
+  .footerstyling, .styling, li, ul, li a{
+    width: 100%;
+    
+    
+  }
+}
+
+@media (max-width: 800px)
+{
+  .styling{
+    flex-direction: column;
+  }
+}
+</style>
+
+
+</head>
+<body>
+    <header>
+        <h2><a href="project.html">Welcome to our website</a></h2>
+        </header>
+        <br>
+        <div class="styling">
+        <nav>
+            <ul>
+                
+                <li style="background-color: pink"><a href="http://127.0.0.1:5500/project.html">Home</a></li>
+                <li  style="background-color: pink"><a  href="aboutpage.html">About</a></li>
+                <li  style="background-color: pink"><a  href="productspage.html">Products</a></li>
+                <li  style="background-color: pink"><a  href="contactus.html">Contact Us </a></li>
+                <li style="float: right;background-color: pink; border-right: none"><a  href="signup.html">Sign Up</a></li>
+                <li style="float: right;background-color: pink; border-left: 1px solid black"><a  href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+        </div>
+<br>
+
+<h2 id="form">
+    Fill in the details to sign up for our website
+</h2>
+<br>
+<div class="formstyling">
+<form>
+    <label for="fname">First name:</label><br>
+    <input style="border-color: red;border-radius: 8px;" type="text" id="fname" name="fname" required><br><br>
+    <label for="lname">Last name:</label><br>
+    <input style="border-color: red;border-radius: 8px;"type="text" id="lname" name="lname" required><br><br>
+    <label for="birthday">Date of Birth:</label><br>
+    <input style="border-color: red;border-radius: 8px;"type="date" id="birthday" name="birthday"><br><br>
+    <label for="phone">Enter your phone number:</label><br>
+    <input style="border-color: red;border-radius: 8px;"type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+    <label for="email">Email:</label><br>
+    <input style="border-color: red;border-radius: 8px;"type="text" id="email" name="email" required><br><br>
+    <label for="pass">Create Password:</label><br>
+    <input style="border-color: red;border-radius: 8px;"type="password" id="pass" name="pass" required><br><br>
+    <label for="reppass">Repeat Password:</label><br>
+    <input style="border-color: red;border-radius: 8px;"type="password" id="reppass" name="reppass" required><br><br>
+    <input type="checkbox" id="tnc" name="tnc" required>
+    <label for="vehicle1"> Do you agree to the terms and conditions?</label><br><br>
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="vehicle2"> Do you want to subscribe to our newsletter?</label><br><br>
+
+    <input style="background-color: white;
+    color: red;
+    border: 2px solid red;
+    border-radius: 7px;
+    width: 115px; cursor: pointer;" type="submit" value="Sign Up">
+
+    <input style="background-color: white;
+    color: red;
+    border: 2px solid red;
+    border-radius: 7px;
+    width: 115px; cursor: pointer;" type="reset">
+
+  </form>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+
+        <footer id="contact">
+            <div class="footerstyling">
+            <nav>
+              <ul>
+                <li style="padding: 10px;border: none;margin: 4px"><p>
+                  Address: 123, XYZ,<br>
+                  Pincode: 000000
+                </p></li>
+                <li1  style="float: right;"><a href="mailto:aggarwalprabal1@gmail.com">E-mail us at</a></li1>
+                <li1  style="float: right;"><a href="http://127.0.0.1:5500/project.html">Visit our website</a></li1>
+                <li1 style="float: right;"><a href="tel:+1234567890">Call us at</a></li1>
+              </ul>
+            </nav>
+          </div>
+          
+          
+          </footer>
+</body>
+</html>

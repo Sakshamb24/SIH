@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page
+    </title>
+
+<style>
+header {
+  background-color: lightcyan;
+  padding: 20px;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 50px;
+  color: royalblue;
+  font-family: 'brush script mt';
+  
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-loK-qfz_Gok-jGzj2Lo8MXP1yqJePre7YA&usqp=CAU");
+    background-size: cover;
+}
+.styling{
+    background-color: aquamarine;
+    color: white;
+    border: 4px solid black;  
+  
+    
+
+}
+.footerstyling{
+
+  background-color: yellow;
+  color: black;
+  border: 4px solid black;
+}
+
+
+
+li{
+    float: left;
+    border-right: 1px solid black;
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+
+li a:hover {
+  background-color: palevioletred;
+}
+
+li1 a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+   
+}
+li1 a:hover {
+  background-color: orange;
+}
+
+
+h1{
+    color: black;
+    background-color: tomato;
+     text-align: center;
+     border: 4px solid green;
+     border-style: solid;
+     border-color: black white white black;
+}
+
+#p1{font-size: 30px;
+    text-align: center;
+    font-family: verdana;
+    text-shadow: 2px 2px 5px black;
+}
+
+#p2{font-size: 40px;
+    text-align: center;
+    font-family: 'lucida handwriting';
+    text-shadow: 2px 3px 5px red;
+}
+
+#demo{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'lucida handwriting';
+  border: 4px solid pink;
+  border-radius: 8px;
+  background-color: lightblue;
+padding: 20px;
+}
+
+#demo2{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'verdana';
+  
+}
+
+#products{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'verdana';   
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 360px;
+  
+}
+
+div.gallery:hover {
+  border: 2px solid red;
+}
+
+div.gallery img {
+  width: 360px;
+  height: 200px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+a:link{
+
+  color:blue;
+  text-decoration: none;
+
+}
+a:visited{
+  color:blue;
+  text-decoration: none;
+}
+#youtube{
+  
+  float: right;
+  margin: 0px 10px;
+  
+}
+#pr{
+  text-align: left;
+  
+}
+
+.button{
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  font-family: Verdana;
+  transition-duration: 0.6s;
+  margin: 0px 2px 20px 1px;
+  cursor: pointer;
+  
+}
+
+.button1{
+  background-color: white;
+  color: black;
+  border: 2px solid darkblue;
+  border-radius: 7px;
+  width: 115px;
+  transition: width 3s;
+  
+}
+
+.button1:hover{
+  background-color: skyblue;
+  width: 300px;
+}
+
+.button2{
+  background-color: lightcoral;
+  color: red;
+  border: 2px solid red;
+  border-radius: 7px;
+  width: 115px;
+  transition: width 3s;
+  
+}
+
+.button2:hover{
+  background-color: red;
+  color: white;
+  width: 300px;
+  
+}
+
+.button3{
+  background-color: lightgray;
+  color: black;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 135px;
+  height: 58px;
+  transition: width 2s, height 2s, transform 2s;
+  
+  
+}
+
+.button3:hover{
+  background-color: grey;
+  color: black;
+  width: 300px;
+  transform: rotate(360deg);
+}
+
+.button4{
+  background-color: lightgreen;
+  color: green;
+  border: 2px solid green;
+  border-radius: 7px;
+  width: 135px;
+  height: 78px;
+  
+  
+}
+
+.button4:hover{
+  background-color: green;
+  color: white;
+  width: 145px;
+  
+}
+
+
+@media screen and (max-width:800px){
+  .footerstyling, .styling, li, ul, li a{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 800px)
+{
+  .styling{
+    flex-direction: column;
+  }
+ 
+}
+
+
+
+.animate {
+  width: fit-content;
+  height: fit-content;
+  background-color: pink;
+  color: black;
+  border: 2px solid black;
+  border-radius: 7px;
+  position: relative;
+  animation-name: example;
+  font-size: 20px;
+  font-family: Verdana;
+  text-align: justify;
+  padding: 20px;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {left:0px}
+  50%  {left:1265px}
+  100% {left:0px; }
+}
+
+</style>
+
+</head>
+<body>
+  
+    <header>
+<h2><a href="project.html">Welcome to our website</a></h2>
+</header>
+<br>
+<div class="styling">
+<nav>
+    <ul>
+        
+        <li style="background-color: pink"><a href="http://127.0.0.1:5500/project.html">Home</a></li>
+        <li  style="background-color: pink"><a  href="aboutpage.html">About</a></li>
+        <li  style="background-color: pink"><a  href="productspage.html">Products</a></li>
+        <li  style="background-color: pink"><a  href="contactus.html">Contact Us </a></li>
+        <li style="float: right;background-color: pink ; border-right: none"><a  href="signup.html">Sign Up</a></li>
+        <li style="float: right;background-color: pink ; border-left: 1px solid black;"><a  href="login.html">Log In</a></li>
+    </ul>
+</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+       <h1>
+        This is a heading.
+       </h1> 
+ <p id="p1">This paragraph has a shadow.</p>
+ <br>
+ <div class="animate">Animation Example</div>
+ <br>
+ <p id="p2">This is another paragraph with CSS Styling.</p>
+ <p id="demo">Click the button below to know the time.</p>
+ <p id="demo2">Move the mouse over to see something!</p>
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+
+ 
+  <button class="button button4" onclick="document.getElementById('demo').innerHTML=Date()">
+  Try this button
+  </button>
+  <button class="button button4" onmouseover="document.getElementById('demo2').innerHTML='Surprise!'"
+   onmouseout="document.getElementById('demo2').innerHTML='Move the mouse over to see something!'">
+    Mouse Over Me
+    </button>
+  
+ 
+ <br>
+ <br>
+ 
+
+
+<button class="button button1"><a style="color: blue;" href="https://www.random.org/">Random</a></button>
+<button class="button button2"><a style="color: white;" href="https://www.google.com">Google</a></button>
+<button class="button button3"><a style="color: black;" href="https://www.instagram.com">Instagram</a></button>
+<br>
+<br>
+
+
+
+
+
+<p id="pr">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+  Obcaecati laborum, repudiandae iste veniam dicta ad porro ab<br>
+  id adipisci impedit tempora, laboriosam asperiores vero recu<br>
+  sandae sit, at sed consequuntur quasi mollitia ullam nobis dolo<br>
+  res magni in. Beatae quibusdam repudiandae totam dolor! Atque q<br>
+  uas, nisi ab laudantium temporibus nihil qui sit doloribus animi<br>
+  eum, nostrum quo. Modi enim ut mollitia maxime quae, libero mag<br>
+  ni cupiditate nihil beatae, inventore ex! Alias iure, minus moll<br>
+  itia blanditiis itaque iste, amet dolore, quibusdam eos repellat <br>
+  cumque. Quo quasi omnis tempora, illum sint culpa. Ab culpa deser<br>
+  unt esse, magni beatae in error fugit explicabo corporis quod.<br>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer id="contact">
+  <div class="footerstyling">
+  <nav>
+    <ul>
+      <li style="padding: 10px;border: none;margin: 4px;"><p>
+        Address: 123, XYZ,<br>
+        Pincode: 000000
+      </p></li>
+      <li1  style="float: right;"><a href="mailto:aggarwalprabal1@gmail.com">E-mail us at</a></li1>
+      <li1  style="float: right;"><a href="http://127.0.0.1:5500/project.html">Visit our website</a></li1>
+      <li1 style="float: right;"><a href="tel:+1234567890">Call us at</a></li1>
+    </ul>
+  </nav>
+</div>
+
+
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd page</title>
+    <style>
+
+        header {
+  background-color: lightcyan;
+  padding: 20px;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 50px;
+  color: royalblue;
+  font-family: 'brush script mt';
+  
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-loK-qfz_Gok-jGzj2Lo8MXP1yqJePre7YA&usqp=CAU");
+    background-size: cover;
+}
+.styling{
+    background-color: aquamarine;
+    color: white;
+    border: 4px solid black; 
+     
+
+}
+@media screen and (max-width:800px){
+  .footerstyling, .styling, li, ul, li a{
+    width: 100%;
+    
+    
+  }
+}
+@media (max-width: 800px)
+{
+  .styling{
+    flex-direction: column;
+  }
+}
+.footerstyling{
+    display: inline-block;
+    width: 100%;
+  background-color: yellow;
+  color: black;
+  border: 4px solid black;
+}
+
+
+
+li{
+    float: left;
+    border-right: 1px solid black;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+
+li a:hover {
+  background-color: palevioletred;
+}
+
+li1 a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none; 
+}
+
+
+
+
+
+        #products{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'verdana';   
+}
+div.gallery {
+
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 360px;
+
+}
+
+div.gallery:hover {
+  border: 2px solid red;
+}
+
+div.gallery img {
+  width: 360px;
+  height: 200px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+a:link{
+
+color:blue;
+text-decoration: none;
+
+}
+a:visited{
+color:blue;
+text-decoration: none;
+}
+li1 a:hover {
+  background-color: orange;
+}
+
+.center{
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+  
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  margin: 0px 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: lightgreen;
+  border-radius: 8px;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2><a href="project.html">Welcome to our website</a></h2>
+        </header>
+        <br>
+        <div class="styling">
+        <nav>
+            <ul>
+                
+                <li style="background-color: pink"><a href="http://127.0.0.1:5500/project.html">Home</a></li>
+                <li  style="background-color: pink"><a  href="aboutpage.html">About</a></li>
+                <li  style="background-color: pink"><a  href="productspage.html">Products</a></li>
+                <li  style="background-color: pink"><a  href="contactus.html">Contact Us </a></li>
+                <li style="float: right;background-color: pink; border-right: none"><a  href="signup.html">Sign Up</a></li>
+                <li style="float: right;background-color: pink; border-left: 1px solid black"><a  href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+        </div>
+
+    <h2 id="products">We offer the following products</h2>
+
+ <div class="gallery">
+    <a target="_blank" href="https://img.freepik.com/free-vector/technology-sphere-with-digital-lines-news-background_1017-37407.jpg?size=626&ext=jpg&ga=GA1.2.1559804104.1692340204&semt=ais">
+      <img src="https://img.freepik.com/free-vector/technology-sphere-with-digital-lines-news-background_1017-37407.jpg?size=626&ext=jpg&ga=GA1.2.1559804104.1692340204&semt=ais" alt="digital bg">
+    </a>
+    <div class="desc">This is a digital background.</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://img.freepik.com/free-vector/luxury-letter-y-logo-design-collection_361591-371.jpg?size=626&ext=jpg&ga=GA1.2.1559804104.1692340204&semt=ais">
+      <img src="https://img.freepik.com/free-vector/luxury-letter-y-logo-design-collection_361591-371.jpg?size=626&ext=jpg&ga=GA1.2.1559804104.1692340204&semt=ais" alt="logo">
+    </a>
+    <div class="desc">This is a company logo.</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://als.lbl.gov/wp-content/uploads/2020/06/shutterstock_408255049_800px-360x200.jpg">
+      <img src="https://als.lbl.gov/wp-content/uploads/2020/06/shutterstock_408255049_800px-360x200.jpg" alt="fish">
+    </a>
+    <div class="desc">This is a fish.</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://www.watchguard.com/sites/default/files/styles/corp_blog_teaser/public/blog-images/webinar_Identity_Security_Plan_Marketo_Partner_BLOG_735x416px.jpg?itok=t9R1TsMH">
+      <img src="https://www.watchguard.com/sites/default/files/styles/corp_blog_teaser/public/blog-images/webinar_Identity_Security_Plan_Marketo_Partner_BLOG_735x416px.jpg?itok=t9R1TsMH" alt="random">
+    </a>
+    <div class="desc">This is a random image.</div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+    Nesciunt quasi, dicta ea sequi facere est aspernatur <br>
+    animi corrupti cupiditate possimus ullam, voluptate, <br>
+    iure maiores nihil cum dolorum repellendus consectetur <br>
+    repudiandae modi recusandae hic eligendi. Accusamus incidunt <br>
+    voluptatibus deserunt, doloremque ratione omnis sed quaerat<br>
+     enim fuga odio iusto obcaecati blanditiis dicta?<br>
+
+     <br>
+     <br>
+
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+    Nesciunt quasi, dicta ea sequi facere est aspernatur <br>
+    animi corrupti cupiditate possimus ullam, voluptate, <br>
+    iure maiores nihil cum dolorum repellendus consectetur <br>
+    repudiandae modi recusandae hic eligendi. Accusamus incidunt <br>
+    voluptatibus deserunt, doloremque ratione omnis sed quaerat<br>
+     enim fuga odio iusto obcaecati blanditiis dicta?<br>
+  </p>
+
+  <br>
+  <br>
+  <div class="center">
+  <div>
+    <div class="pagination">
+      <a href="productspage.html">&laquo;</a>
+      <a href="productspage.html">1</a>
+      <a href="products2.html"class="active">2</a>
+      <a href="products3.html">3</a>
+      <a href="products4.html">4</a>
+      <a href="products3.html">&raquo;</a>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <footer id="contact">
+    <div class="footerstyling">
+    <nav>
+      <ul>
+        <li style="padding: 10px;border: none;margin: 4px"><p>
+          Address: 123, XYZ,<br>
+          Pincode: 000000
+        </p></li>
+        <li1  style="float: right;"><a href="mailto:aggarwalprabal1@gmail.com">E-mail us at</a></li1>
+        <li1  style="float: right;"><a href="http://127.0.0.1:5500/project.html">Visit our website</a></li1>
+        <li1 style="float: right;"><a href="tel:+1234567890">Call us at</a></li1>
+      </ul>
+    </nav>
+    </div>
+  
+  </footer>
+
+</body>
+</html>
