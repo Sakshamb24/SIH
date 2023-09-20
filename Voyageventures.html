@@ -56,17 +56,13 @@ body{
 
 
 }
-@media (max-width: 500px){
-.styling {
-    background-color: #fff;
-    border-bottom: 1px solid #eae7e7;
-}
-}
+
 .footerstyling{
    font-size: 20px;
   background-color: rgb(72, 68, 80);
   color: rgb(250, 246, 246);
-  border: 4px solid black;
+  justify-content: center;
+  
 }
 
 
@@ -86,6 +82,9 @@ ul{
   position: sticky;
   top: 0;
 }
+body{
+  overflow-x: hidden;
+}
 
 li a {
   display: block;
@@ -97,14 +96,16 @@ li a {
 
 li a:hover {
   background-color: rgb(23, 131, 164);
+  transition: 0.5s;
 }
 
 li1 a {
-  display: block;
+  display: inline-block;
   color: red;
   text-align: center;
   padding: 40px;
   text-decoration: none;
+  justify-content: center ;
 
 }
 li1 a:hover {
@@ -185,12 +186,7 @@ a:visited{
   color:rgb(249, 249, 250);
   text-decoration: none;
 }
-#youtube{
 
-  float: right;
-  margin: 0px 10px;
-
-}
 #pr{
   text-align: left;
 
@@ -218,6 +214,7 @@ a:visited{
   background-image: url(https://images8.alphacoders.com/131/1313509.jpeg);
     background-position: center;
     background-size: cover;
+    height: 740px;
 
 }
 
@@ -539,14 +536,15 @@ font-family: 'Poppins', sans-serif;
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
-.chat-popup .animate{
 
-}
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: white;
+  background-color: #7bffce ;
+  border: 1px solid black;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.24 );
+  border-radius: 30px;
 }
 
 /* Full-width textarea */
@@ -555,14 +553,15 @@ font-family: 'Poppins', sans-serif;
   padding: 0px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: white;
   resize: none;
   min-height: 200px;
 }
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
-  background-color: #ddd;
+  background-color: white;
+  
   outline: none;
 }
 
@@ -734,6 +733,7 @@ font-family: 'Poppins', sans-serif;
 font-weight: 500;
 
 }
+
 .inside h1{
  font-size: 40px;
  font-weight: 600;
@@ -869,6 +869,103 @@ font-family: 'Poppins', sans-serif;
 
    }
 
+
+   .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover{
+    color: darkgray;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 5px;
+  padding: 5px;
+  
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 0px 10px;
+  border: none;
+}
+.openbtn:hover{
+    background-color: rgb(23, 131, 164);
+    transition: 0.5s;
+}
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+  float:right;
+}
+
+#exchange{
+    font-size: 40px;
+ font-weight: 600;
+ font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+.exchange{
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    border: 0;
+    width: 90px;
+    margin: 80px 80px;
+    border-radius: 20px;
+    padding: 10px 100px;
+    height: 100px;
+    box-shadow: 0px 5px 16px 5px rgba(0, 0, 0, 0.24 );
+    justify-content: center;
+}
+
+
+.leftdiv{
+display: inline-block;
+vertical-align: top;
+
+}
+
+.rightdiv{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#cur{
+    font-size: medium;
+    text-align: center;
+    font-weight: 600;
+ font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+#foot{
+    text-align: center;
+    padding: 10px;
+}
 </style>
 
 </head>
@@ -885,24 +982,50 @@ font-family: 'Poppins', sans-serif;
         <li  ><a  href="contactus.html">Contact Us </a></li>
         <li  ><a  href="contactus.html">Home Stays</a></li>
         <li  ><a  href="contactus.html">Flights</a></li>
-        <li  ><a  href="contactus.html">Forex</a></li>
         <li  ><a  href="contactus.html">Travel Insurance</a></li>
-        <li style="float: right; border-right: none"><a  href="signup.html">Sign Up</a></li>
-        <li style="float: right; border-left: 1px solid rgb(0, 0, 0);"><a  href="login.html">Log In</a></li>
+        <li  ><a  href="#inr">INR 🠻</a></li>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="login.html">LogIn</a>
+            <a href="signup.html">SignUp</a>
+            <a href="signup.html">Gift Cards</a>
+            <a href="signup.html">Offers</a>
+          </div>
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
     </ul>
+    
 </nav>
 
-<br>
 
-</div><br>
+<br>
+</div>
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginRight = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginRight= "0";
+    }
+</script>
+
+
+<br>
 <div >
 <img class="logo" src="20230919_140318.png" alt="">
 </div>
 <header >
-  <h2 class="ok">Voyage Ventures</h2>
+  <h2 class="ok">Voyage Ventures</h2> 
   <p class="tag">"Discover the World, One Click at a Time."</p>
   </header> <br>
-
+  <br>
   <div class="search">
     <form >
     <input type="search" class="hello" placeholder="Search Destinations,Activities">
@@ -1007,8 +1130,8 @@ font-family: 'Poppins', sans-serif;
     <h1 style=" font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;">24*7 Customer Support</h1>
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <label for="msg"><b>Type your query below</b></label>
+    <textarea placeholder="..." name="msg" required></textarea>
 
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -1050,7 +1173,7 @@ font-family: 'Poppins', sans-serif;
     <h1 id="maa">Flights</h1>
   </button> 
   <button class="asw"><h1 id="maa">Trains</h1></button>
-  <button class="qwa"><h1 id="maa">Battery <br>Rickshaw</h1></button>
+  <button class="qwa"><h1 id="maa">Battery <br>Rickshaw<br><p style="font-size: small;">*Available in selected cities</p></h1></button>
   <button class="hay"><h1 id="maa">Rentals</h1></button>
  </div>
  <!-- <div class="hyy">
@@ -1062,7 +1185,7 @@ font-family: 'Poppins', sans-serif;
    <div class="inside">
      <h1>
 
-      "Discover the Colors of India: Your Journey, Our Heritage </h1>
+      "Discover the Colors of India: Your Journey, Our Heritage" </h1>
       <div class="line"></div>  
       <div class="photos">
         <button class="taj"><h1 id="maa">Taj Mahal</h1></button>
@@ -1080,9 +1203,38 @@ font-family: 'Poppins', sans-serif;
 
 
 
+    
+<div id="inr" class="center">
+    <h1 id="exchange">
+        On-Site Currency Exchange
+    </h1>
+    <div class="leftdiv">
+    <button class="exchange" style="background-image: url(https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg);"></button><h2 id="cur">USD</h2>
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png);"></button><h2 id="cur">EURO</h2>
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png);"></button><h2 id="cur">POUND</h2>
+</div>
+<div class="rightdiv">
+    <button class="exchange" style="background-image: url(https://cdn.britannica.com/78/6078-004-77AF7322/Flag-Australia.jpg);"></button><h2 id="cur">AUSD</h2>
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/255px-Flag_of_the_United_Arab_Emirates.svg.png);"></button><h2 id="cur">DIRHAM</h2>
+    <button class="exchange" style="background-image: url(https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg);"></button><h2 id="cur">RSAD</h2>
+</div>
+<div class="leftdiv">
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/1200px-Flag_of_Kuwait.svg.png);"></button><h2 id="cur">DINAR</h2>
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Japan_%28bordered%29.svg/800px-Flag_of_Japan_%28bordered%29.svg.png?20100522074242);"></button><h2 id="cur">YEN</h2>
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg);"></button><h2 id="cur">CAN</h2>
+</div>
+<div class="rightdiv">
+    <button class="exchange" style="background-image: url(https://cdn.britannica.com/17/3017-004-DCC13F9D/Flag-New-Zealand.jpg);"></button><h2 id="cur">NZD</h2>
+    <button class="exchange" style="background-image: url(https://cdn.britannica.com/43/4543-004-C0D5C6F4/Flag-Switzerland.jpg);"></button><h2 id="cur">FRANC</h2>
+    <button class="exchange" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_the_Cayman_Islands.svg/1200px-Flag_of_the_Cayman_Islands.svg.png);"></button><h2 id="cur">CID</h2>
+</div>
+</div>
+
+
+
   <!-- ========our services=============== -->
 
- >
+ 
   <br><br><br>  
 
 <div class="aim">
@@ -1117,14 +1269,14 @@ font-family: 'Poppins', sans-serif;
 <footer id="contact">
   <div class="footerstyling">
   <nav>
+    <p id="foot"> © 2023 VoyageVentures.in All rights reserved.<br>
+The content and images used on this site are copyright protected and copyrights 
+<br>vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. <br>Unauthorized use is prohibited and punishable by law.
+      </p>
     <ul>
-      <li style="padding: 10px;border: none;margin: 4px;"><p>
-        Address: 123, Rohini,<br>
-        Pincode: 110085
-      </p></li>
-      <li1  style="float: right;"><a href="mailto:aggarwalprabal1@gmail.com">E-mail us at</a></li1>
-      <li1  style="float: right;"><a href="http://127.0.0.1:5500/project.html">Visit our website</a></li1>
-      <li1 style="float: right;"><a href="tel:+1234567890">Call us at</a></li1>
+      <li1 ><a href="mailto:aggarwalprabal1@gmail.com">E-mail us at</a></li1>
+      <li1 ><a href="http://127.0.0.1:5500/project.html">Visit our website</a></li1>
+      <li1 ><a href="tel:+1234567890">Call us at</a></li1>
     </ul>
   </nav>
 </div>
